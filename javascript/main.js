@@ -36,14 +36,14 @@ var horizontalScrollAction = function () {
         // for (var i = 0; i < 2; i++) {
         //     buttons[i].addEventListener('click', () => { _scrollPage(i) });
         // }
-        buttons[0].addEventListener('click', () => { _scrollPage(0) });
-        buttons[1].addEventListener('click', () => { _scrollPage(1) });
-        buttons[2].addEventListener('click', () => { _scrollPage(2) });
-        buttons[3].addEventListener('click', () => { _scrollPage(3) });
-        buttons[4].addEventListener('click', () => { _scrollPage(4) });
-        buttons[5].addEventListener('click', () => { _scrollPage(5) });
-        buttons[6].addEventListener('click', () => { _scrollPage(6) });
-        buttons[7].addEventListener('click', () => { _scrollPage(7) });
+        pages[0].addEventListener('click', () => { _scrollPage(0) });
+        pages[1].addEventListener('click', () => { _scrollPage(1) });
+        pages[2].addEventListener('click', () => { _scrollPage(2) });
+        pages[3].addEventListener('click', () => { _scrollPage(3) });
+        pages[5].addEventListener('click', () => { _scrollPage(4) });
+        pages[6].addEventListener('click', () => { _scrollPage(5) });
+        pages[7].addEventListener('click', () => { _scrollPage(6) });
+        pages[8].addEventListener('click', () => { _scrollPage(7) });
         // buttons[4].addEventListener('click', () => { _scrollPage(4) });
     }
 
@@ -99,9 +99,10 @@ function downButtonAction() {
     }
 
     function _addEventHandlers() {
-        for (var i = 0; i < 3; i++) {
-            buttons[i].addEventListener('click', _triggerScrollDown);
+        for (var i = 0; i < 2; i++) {
+            pages[i].addEventListener('click', _triggerScrollDown);
         }
+        document.getElementById('between').addEventListener('click', _triggerScrollDown);
     }
 
     function _triggerScrollDown() {
