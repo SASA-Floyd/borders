@@ -7,7 +7,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    width: 1000px;
+    width: 1020px;
     height: 500px;
     margin: auto;
     background-color: black;
@@ -30,7 +30,7 @@
     right:0;
     bottom:0;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     opacity: 0;
     font-family: 'Nanum Gothic',sans-serif;
 }
