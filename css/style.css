@@ -52,9 +52,6 @@ button {
     opacity: 0;
 }
 
-.next {
-    background-image: url('./img/arrow.svg');
-}
 
 .horizontal-scroll-wrapper > .horizontal-page > img {
     grid-column: 1/2;
@@ -71,7 +68,7 @@ button {
     margin-top: auto;
     margin-bottom: auto;
     text-align: left;
-    font-size: 40px;
+    /* font-size: 40px; */
     line-height: 200%;
     word-break: keep-all;
 	text-align: left;
