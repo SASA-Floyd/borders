@@ -44,6 +44,7 @@ var horizontalScrollAction = function () {
         pages[6].addEventListener('click', () => { _scrollPage(5) });
         pages[7].addEventListener('click', () => { _scrollPage(6) });
         pages[8].addEventListener('click', () => { _scrollPage(7) });
+        pages[9].addEventListener('click', _goBackHome);
         // buttons[4].addEventListener('click', () => { _scrollPage(4) });
     }
 
@@ -60,6 +61,10 @@ var horizontalScrollAction = function () {
         var x = i < 4 ? 0 : 1;
         container[x].scrollLeft += netWidth * 2 / 3;
 
+        if (i == 7) {
+            await sleep(1000).then(() => { alert('홈으로 돌아가려면 화면을 클릭하세요'); });
+        }
+
 
     }
 
@@ -72,6 +77,10 @@ var horizontalScrollAction = function () {
         var contents = nextPage.getElementsByClassName('article')[0];
         // img.className = img.className.replace("hidden", "fade-in");
         contents.className = contents.className.replace("hidden", "fade-in");
+    }
+
+    var _goBackHome = function () {
+        window.location.href = "./index.html"
     }
 
     return {
