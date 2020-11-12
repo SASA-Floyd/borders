@@ -17,7 +17,7 @@ html {
     grid-template-rows: 1fr 4fr 1fr;
     grid-template-columns: 1fr repeat(5, 4fr) 1fr;
     
-    background-color: lightgray;
+    background-color: gray;
     overflow-x: auto;
     scroll-behavior: smooth;
 }
@@ -53,7 +53,7 @@ button {
 }
 
 .horizontal-scroll-wrapper > .horizontal-page > img {
-    grid-column: 1/2;
+    grid-column: 1/2;d
     grid-row: 1/3;
 }
 
