@@ -106,7 +106,7 @@ function downButtonAction() {
     }
 
     function _triggerScrollDown() {
-        console.log('sdf');
+        // console.log('sdf');
         window.scrollBy(0, netHeight);
     }
 
