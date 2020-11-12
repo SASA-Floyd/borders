@@ -68,6 +68,7 @@ button {
     font-size: larger;
     line-height: 200%;
     word-break: keep-all;
+	text-align: justify;
 }
 
 
